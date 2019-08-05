@@ -175,7 +175,7 @@ def train():
     hidden = model.init_hidden(args.batch_size)
     for batch, i in enumerate(range(0, train_data.size(0) - 1, args.bptt)):
         data, targets = get_batch(train_data, i)
-	if batch ==0:
+        if batch ==0:
 	    print('\n the {}th'.format(i))
             print('data : {}'.format(data))
             print('targets : {}'.format(targets))
